@@ -4,7 +4,7 @@
   "description": "simple express graphql boilerplate",
   "main": "server.js",
   "scripts": {
-    "dev": "NODE_ENV=dev node server.js",
+    "dev": "NODE_ENV=dev babel-node server.js",
     "lint": "eslint server.js lib data",
     "lint:fix": "npm run lint -- --fix",
     "start": "NODE_ENV=production node server.js",
@@ -23,6 +23,8 @@
     "winston": "^2.3.1"
   },
   "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-polyfill": "^6.23.0",
     "eslint": "^3.17.1",
     "eslint-config-airbnb": "^14.1.0",
     "eslint-plugin-import": "^2.2.0",

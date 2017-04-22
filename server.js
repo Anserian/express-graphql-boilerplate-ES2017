@@ -1,3 +1,4 @@
+const babel = require('babel-polyfill');
 const express = require('express');
 const { graphqlExpress, graphiqlExpress } = require('graphql-server-express');
 const bodyParser = require('body-parser');
