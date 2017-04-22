@@ -1,11 +1,5 @@
-const Query = require('./resolvers/Query');
-const Author = require('./resolvers/Author');
-const Post = require('./resolvers/Post');
+import { Query } from './resolvers/Query';
 
-const resolveFunctions = {
-  Query,
-  Author,
-  Post,
+export const resolvers = {
+  Query
 };
-
-module.exports = resolveFunctions;

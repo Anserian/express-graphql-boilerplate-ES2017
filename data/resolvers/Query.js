@@ -1,19 +1,21 @@
-const authors = [
-  { id: 1, firstName: 'Tom', lastName: 'Coleman' },
-  { id: 2, firstName: 'Sashko', lastName: 'Stubailo' },
-];
+const mysql = require('mysql2/promise');
 
-const posts = [
-  { id: 1, authorId: 1, title: 'Introduction to GraphQL', votes: 2 },
-  { id: 2, authorId: 2, title: 'GraphQL Rocks', votes: 3 },
-  { id: 3, authorId: 2, title: 'Advanced GraphQL', votes: 1 },
-];
+export const Query = {
+  characters: async () => {
+    let connection = await mysql.createConnection({
+      host: 'localhost',
+      user: 'root',
+      password: '',
+      database: 'rpg'
+    });
 
-module.exports = {
-  posts() {
-    return posts;
+    let [rows, fields] = await connection.query('SELECT * FROM characters');
+
+    connection.end();
+
+    return rows;
   },
-  author(_, { id }) {
-    return authors.find(a => a.id === id);
-  },
+  test() {
+    return 'test';
+  }
 };
