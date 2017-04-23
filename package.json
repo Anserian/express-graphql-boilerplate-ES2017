@@ -1,7 +1,7 @@
 {
-  "name": "express-graphql-boilerplate",
+  "name": "express-graphql-boilerplate-ES2017",
   "version": "1.0.0",
-  "description": "simple express graphql boilerplate",
+  "description": "simple express graphql boilerplate with ES2017 functionality - based on Edd Yerburgh's repository at https://github.com/eddyerburgh/express-graphql-boilerplate",
   "main": "server.js",
   "scripts": {
     "dev": "NODE_ENV=dev babel-node server.js",
@@ -10,7 +10,7 @@
     "start": "NODE_ENV=production babel-node server.js",
     "test": "npm run lint"
   },
-  "author": "Edd Yerburgh",
+  "author": "Andrew Serianni",
   "license": "MIT",
   "dependencies": {
     "body-parser": "^1.17.1",

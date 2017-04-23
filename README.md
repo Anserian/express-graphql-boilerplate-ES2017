@@ -1,12 +1,13 @@
 # express-graphql-boilerplate-ES2017
+(Copied from Edd Yerburgh's repository at https://github.com/eddyerburgh/express-graphql-boilerplate)
 (Based on [Edd Yerburgh's](https://github.com/eddyerburgh) [express-graphql-boilerplate](https://github.com/eddyerburgh/express-graphql-boilerplate))
-
 ## Features
 
 - Express server
 - GraphQL
 - GraphQl tools
 - Babel ES2017 preset (async/await, import/export, etc.)
+- eslint with airbnb, ES2017 syntax
 - eslint with airbnb
 - winston logger
 
