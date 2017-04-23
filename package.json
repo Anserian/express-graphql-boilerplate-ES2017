@@ -10,7 +10,7 @@
     "start": "NODE_ENV=production babel-node server.js",
     "test": "npm run lint"
   },
-  "author": "Andrew Serianni",
+  "author": "Edd Yerburgh, Andrew Serianni",
   "license": "MIT",
   "dependencies": {
     "body-parser": "^1.17.1",
