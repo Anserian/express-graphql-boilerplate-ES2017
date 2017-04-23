@@ -4,10 +4,11 @@
   "description": "simple express graphql boilerplate with ES2017 functionality - based on Edd Yerburgh's repository at https://github.com/eddyerburgh/express-graphql-boilerplate",
   "main": "server.js",
   "scripts": {
-    "dev": "NODE_ENV=dev babel-node server.js",
+    "dev": "NODE_ENV=dev babel-node ./src/server.js",
+    "build": "babel src -d lib --source-maps",
     "lint": "eslint server.js lib data",
     "lint:fix": "npm run lint -- --fix",
-    "start": "NODE_ENV=production babel-node server.js",
+    "start": "npm run build && NODE_ENV=production node ./lib/server.js",
     "test": "npm run lint"
   },
   "author": "Edd Yerburgh, Andrew Serianni",
@@ -27,6 +28,7 @@
     "babel-cli": "^6.24.1",
     "babel-eslint": "^7.2.3",
     "babel-polyfill": "^6.23.0",
+    "babel-preset-es2015": "^6.24.1",
     "babel-preset-es2017": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "eslint": "^3.17.1",

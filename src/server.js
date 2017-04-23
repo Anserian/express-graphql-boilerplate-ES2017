@@ -3,10 +3,10 @@ import express from 'express';
 import { graphqlExpress, graphiqlExpress } from 'graphql-server-express';
 import { makeExecutableSchema } from 'graphql-tools';
 import bodyParser from 'body-parser';
-import SchemaDefinition from './src/schema';
-import Types from './src/Types';
-import resolvers from './src/resolvers';
-import logger from './lib/logger';
+import SchemaDefinition from './schema';
+import Types from './Types';
+import resolvers from './resolvers';
+import logger from '../utils/logger';
 import cors from 'cors';
 const config = require('config');
 
