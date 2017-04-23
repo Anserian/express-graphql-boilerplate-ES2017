@@ -7,13 +7,12 @@
     "dev": "NODE_ENV=dev babel-node server.js",
     "lint": "eslint server.js lib data",
     "lint:fix": "npm run lint -- --fix",
-    "start": "NODE_ENV=production node server.js",
+    "start": "NODE_ENV=production babel-node server.js",
     "test": "npm run lint"
   },
   "author": "Edd Yerburgh",
   "license": "MIT",
   "dependencies": {
-    "babel-preset-stage-0": "^6.24.1",
     "body-parser": "^1.17.1",
     "config": "^1.25.1",
     "cors": "^2.8.1",
@@ -25,14 +24,18 @@
     "winston": "^2.3.1"
   },
   "devDependencies": {
+    "@earnest/eslint-config-es7": "^4.0.1",
     "babel-cli": "^6.24.1",
+    "babel-eslint": "^7.2.3",
     "babel-polyfill": "^6.23.0",
     "babel-preset-es2017": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "eslint": "^3.17.1",
     "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-babel": "^4.1.1",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-mocha": "^4.9.0",
     "eslint-plugin-react": "^6.10.0"
   }
 }
