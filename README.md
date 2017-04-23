@@ -1,11 +1,11 @@
-# express-graphql-boilerplate
+# express-graphql-boilerplate-ES2017
 
 ## Features
 
 - Express server
 - GraphQL
 - GraphQl tools
-- eslint with airbnb
+- eslint with airbnb, ES2017 syntax
 - winston logger
 
 ## Installation

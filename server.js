@@ -1,14 +1,14 @@
-const babel = require('babel-polyfill');
-const express = require('express');
-const { graphqlExpress, graphiqlExpress } = require('graphql-server-express');
+const babel = require('babel-polyfill'); // eslint-disable-line
+import express from 'express';
+import { graphqlExpress, graphiqlExpress } from 'graphql-server-express';
 import { makeExecutableSchema } from 'graphql-tools';
-const bodyParser = require('body-parser');
+import bodyParser from 'body-parser';
 import SchemaDefinition from './src/schema';
 import Types from './src/Types';
 import resolvers from './src/resolvers';
-const logger = require('./lib/logger');
+import logger from './lib/logger';
+import cors from 'cors';
 const config = require('config');
-const cors = require('cors');
 
 const PORT = config.get('port');
 
