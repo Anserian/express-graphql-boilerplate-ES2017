@@ -30,6 +30,13 @@ npm start
 ```
 yarn start
 ```
+This script compiles the source files to /lib for compatibility with the standard (non-Babel) Node.js runtime, 
+and starts the server.
+
+```
+npm run build
+```
+will build the files without starting the server.
 
 The server will be running at http://localhost:4000/graphql/
 
@@ -43,7 +50,7 @@ http://localhost:4000/graphql
 
 ### Dev
 
-Start the server
+This script starts the server using babel-node without any compiling beforehand.
 
 ```
 npm run dev
